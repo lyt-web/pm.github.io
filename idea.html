@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Questionnaire</title>
+    <script type="text/javascript">
+        function callAndroidOnResume() {
+            if (window.Android) {
+                window.Android.callOnResume();
+            } else {
+                alert("Android interface not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Web Questionnaire</h1>
+    <button onclick="callAndroidOnResume()">Call Android onResume</button>
+</body>
+</html>
